@@ -38,7 +38,7 @@ namespace MultipleTbCRUD.Pages.Library
                 await _context.Books.AddAsync(emptyBook);
                 await _context.SaveChangesAsync();
 
-                RedirectToPage("./Index");
+                RedirectToPage("../Index");
             }
 
             PopulateCategoryDropDownList(_context, emptyBook.CategoryID);
